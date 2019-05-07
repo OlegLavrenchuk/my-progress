@@ -1,9 +1,10 @@
-ul 
+ul  
+    margin: 0px
     padding: 0px
     & li 
         list-style-type: none
 a 
-    color: #ffffff
+    color: #ffffff 
     &:hover 
         text-decoration: none
 
@@ -14,7 +15,7 @@ button
 
 .header 
     &-top 
-        padding: 20px 0 10px 0
+        padding: 20px 0 20px 0
         background-color: #434343
     &-top__settings ul li a
         margin-right: 38px
@@ -32,6 +33,7 @@ button
                 margin-left: 13px
                 color: #ffffff 
     &-menu 
+        padding: 18.5px
         box-shadow: 0px 15px 11px -8px rgba(0,0,0,0.4)
         &__search 
             & label 
@@ -52,21 +54,23 @@ button
                 margin-right: 10px
                 color: #d58e32
         &__nav li 
-            padding: 37px 12px
+           
             & a 
+                padding: 37px 12px
                 font-weight: 500
                 color: #000000
-            &:hover 
-                padding: 35px 12px
-                background-color: #d58e32
-                border-top: 2px solid #000000
-                border-radius: 0 0 3px 3px
+                &:hover, &:focus
+                    padding: 35px 12px
+                    background-color: #d58e32
+                    border-top: 2px solid #000000
+                    border-radius: 0 0 3px 3px
+            
 
 .firstBlock 
     &__top
         padding: 18px 24px
         background-color: #2a2a2a 
-        & a:hover 
+        & a:hover, a:focus
             color: #d58e32 
         & span 
             color: #ffffff
@@ -105,6 +109,7 @@ button
         border: 1px solid #808080
         border-top: none
         ul  
+            margin-bottom: 32px
             margin-left: 5px
             margin-top: 18px
             & li 
@@ -165,37 +170,171 @@ button
                     margin-top: 10px
                 & img 
                     margin-top: -50px
-    &__discount 
-        background-color: #6a6a6a   
-        padding: 25px
-        &_num 
-            font-size: 50px
-            border: 5px solid #ffffff
-            padding: 10px
-        &_num , & p 
-            color: #ffffff
+
+.products 
+    padding-top: 40px
+    &__special
+        margin-top: 25px
+    &__headline
+        text-transform: uppercase
+        color: #d58e32
+        font-size: 20px
+        font-weight: 700
         & p 
-            font-weight: 500
-            font-size: 36px
-            text-transform: uppercase
-        & div 
+            margin: 0
+    &__nav 
+        margin-left: 208px
+        & ul li 
+            margin-right: 30px        
+            & a
+                color: #2a2a2a
+                font-size: 18px
+                font-weight: 500
+                color: #000000
+                &:hover 
+                    border-bottom: 3px solid #d58e32
+                    padding-bottom: 21px
+                    position: relative
+                    z-index: 3
+    &__line 
+        & hr 
+            height: 3px
+            width: 100%
+            background-color: #e2e2e2
+            border: none
+            position: relative
+            z-index: 1
+    &__choice
+        & a 
+           color: #e2e2e2
+           &:hover, &:focus
+               color: #d58e32
+    &__product-top
+        background: url('../img/product.png')
+        height: 260px
+        & button 
             background-color: #2a2a2a
-            padding: 153px 227px 30px 20px
-    &__topContent
-        margin-left: 10px
-        background-color: #e8edf7
-        padding: 50px 112px
+            color: #ffffff
+            font-size: 13px
+            padding: 0 8px
+            height: 35px
+            margin-top: 200px
+            & span 
+                margin-left: 5px
+                font-weight: 500
+    &__product-bottom
+        border: 1px solid #e2e2e2
+        border-top: none
+        padding: 16px 10px
+        &_headline p 
+            color: #d58e32
+            font-family: "Poppins - Semi Bold"
+            font-size: 16px
+            font-weight: 600
+        &_stars 
+            & i 
+                margin-right: 7px
+                &:hover, &:focus
+                    color: #d58e32
+        &_hr hr
+            background-color: #2a2a2a
+            height: 1px
+            width: auto  
+        &_butt ul li  
+            margin-right: 5px
+            border: 1px solid #000000
+            padding: 7px 10px
+        &_price span 
+            padding: 9px 11px
+            background-color: #d58e32
+            color: #ffffff
+            font-size: 18px
+            font-weight: 400
+
+.blog 
+    padding-top: 55px
+    &__content
+        padding-bottom: 10px
+    &__content_text 
+        padding-top: 15px
+        margin-top: -50px
+        background-color: #ffffff
+        & span 
+            color: #676767
+            font-family: Poppins
+            font-size: 14px
+            font-weight: 600
         & p 
-            font-size: 30px
-            text-transform: uppercase     
-        
-            
+            margin-top: 15px
+            color: #d58e32
+            font-family: "Poppins - Semi Bold"
+            font-size: 17px
+            font-weight: 600
+    &__button button 
+        margin-top: 38px
+        padding: 15px 40px
+        color: #ffffff
+        background-color: #2a2a2a
+        font-size: 16px
+        font-weight: 500
+        &:hover 
+            background-color: #d58e32
+    &__button-left button,&__button-right button 
+        background-color: #2a2a2a
+        padding: 40px 13px
+        & i 
+            color: #ffffff
+    &__brand 
+        border: 1px solid #cccccc
+        padding: 25px 22px
+    &__button-right button 
+        display: block
+        margin-right: 0
+        margin-left: auto
+    &__review-logo, &__review-text , &__account
+        margin-top: 32px
+    &__review-text , &__account_client
+        color: #676767
+        font-family: Poppins
+        font-size: 14px
+        font-weight: 400
+    &__account
+        margin-bottom: 61px
+        &_name 
+            color: #676767
+            font-family: "Poppins - Semi Bold"
+            font-size: 16px
+            font-weight: 900
+ 
+.information
+    background-color: #363636
+    &__block 
+        margin-top: 62px
+        margin-bottom: 28px 
+        & p 
+            text-transform: uppercase
+            color: #ffffff
+            font-size: 22px
+            font-weight: 600
+        & ul li a 
+            color: #a9a9a9
+            font-family: Poppins
+            font-size: 14px
+    &__cards 
+        margin-bottom: 53px
 
-            
 
-
-
-
+.footer
+    background-color: #2a2a2a
+    padding: 40px 0
+    &__icon ul li 
+        margin-left: 20px
+    &__describe 
+        margin-left: 280px
+        & span 
+            color: #a9a9a9
+            font-family: Poppins
+            font-size: 14px
     
 
         
