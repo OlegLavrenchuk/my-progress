@@ -1,0 +1,14 @@
+{
+  "name": "temy-test-environment",
+  "version": "1.0.0",
+  "description": "Basic environment of test task for front-end candidates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vadym Selishchev",
+  "license": "MIT",
+  "devDependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}

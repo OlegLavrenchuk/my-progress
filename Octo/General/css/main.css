@@ -242,6 +242,7 @@ a:hover {
 }
 
 .fourBlock__special {
+  position: relative;
   padding: 13px 0;
   background: #333333;
 }
@@ -297,10 +298,6 @@ a:hover {
   margin-right: 17px;
 }
 
-.footer {
-  margin-bottom: 20px;
-}
-
 .footer__nav ul li {
   margin-left: 40px;
   font-weight: 200;
@@ -309,5 +306,10 @@ a:hover {
 
 .footer__nav ul li a:hover {
   color: #000000;
+}
+
+.footer__rectangle img {
+  margin-top: -920px;
+  margin-left: 22px;
 }
 /*# sourceMappingURL=main.css.map */
